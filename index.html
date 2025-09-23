@@ -2,67 +2,134 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+<nav>
+    <div class="nav-container">
+        <a href="#" class="logo">Graham Gobbel</a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</nav>
+
 </head>
 <body>
-  
-   <header><nav><a href="index.html"> Home </a>| <a href="about.html">About</a></nav></header>
+   
+    
+    <header>
+
+        <div class="header_text">
+            <h1>Graham Gobbel</h1>
+            <p>Business Information Systems Student</p>
+            <p>A motivated business information systems and data analytics student passionate about 
+applying technology and problem-solving to real-world challenges. Dedicated to leveraging 
+analytical skills and leadership experience to create meaningful impact in business and 
+technology-driven environments.</p>
+
+        </div>
+
+        <div class="header_pic">
+        <img src="../Images/headshot24_graham gobbel_cropped.png" alt="Graham Gobbel professional headshot" />
+        </div>
 
 
-   <main>
-        <section>
-        <h1>Welcome</h1>
-
-        <p>Welcome! I’m excited to share a little bit about my journey in business, technology, and leadership.
-             This site highlights my growth as a student and leader while showcasing the skills I’m building along the way</p>
-        </section>
-
-        <section>
-        <h2>About Me</h2>
-        <p>I am Graham Gobbel, a student at Texas Christian University majoring in Business Information Systems with a minor in Digital Culture and Data Analytics. 
-            I enjoy exploring how technology, business strategy, and people intersect, and I’ve had experiences ranging from interning with a bank’s
-            data and AI teams to serving as New Member Experience Director in my sorority, <a href="https://www.kappakappagamma.org/" target="_blank"> Kappa Kappa Gamma. </a> 
-        </p>
-
-          <p>This is a link to <a href="https://www.tcu.edu" target="_blank"> my school's website</a></p>
-        </section>
-
-        <section>
-        <h3>Education & Interests</h3>
-
-        <p>I am originally from <em>Columbus, GA</em> and just started my junior year.
-             At TCU, I’m part of the Neeley Leadership Program, where I’m developing skills in self-awareness, 
-             communication, and teamwork. Outside of school I love to go on runs and walks, do hot yoga, and hang out with my friends.</p>
-        <!-- the paragraph above includes italicizing -->
-        </section>
-
-        <section>
-
-        <h4 id="goals">Goals</h4>
-
-        <p>After getting somewhat familiar with HTML my senior year of highschool, I hope to refresh my skills and improve upon them! 
-        Check out the first website I made  <a href="https://getfitwithgraham.godaddysites.com/" target="_blank"> here!</a>
-            In this coding class, my main goal is to build confidence in my programming abilities and strengthen my problem-solving mindset. 
-            I want to push myself to not only understand how the code works but also to see its broader applications in business and analytics.</p>
-        </section>
-
-        <section>
-        <h5>Contact Info</h5>
-
-         <p>You can reach me at <strong> graham.gobbel@tcu.edu </strong> or by calling <strong>(706) 580-0615.</strong></p>
-         </section>
-             <!--the paragraph above includes bold formatting-->
 
 
-    </main>
+    </header>
+<main>
+    
 
-    <figure align="center"><!--pre CSS workaround for centering-->
-    <img src="Images/tcu.jpg" alt="Simple Picture of TCU" width="100%">
+    <section class = "about-section" id="about">
+        <div class="about-image">
+            <img src="" alt="">
+            </div>
+        <div class="about-text"></div>
+            <h2>About Me</h2>
+            
+            <p>I am a junior at Texas Christian University pursuing a degree in Business Information 
+Systems with a minor in Digital Culture & Data Analytics. My academic path reflects a 
+passion for understanding how technology and data can transform organizations, 
+streamline processes, and drive better decision-making.</p>
 
-    <figcaption>Texas Christian University Commons</figcaption>
-    </figure>
+            <p>Outside of the classroom, I am an active member of the Neeley Leadership Program, where 
+I focus on developing self-awareness, communication, and leadership skills. I also serve as 
+the New Member Experience Director for my sorority, Kappa Kappa Gamma, where I 
+oversee events, budgeting, and member development programming. Both of these 
+experiences have strengthened my organizational and leadership abilities.
+</p>
 
+<p>My goals include pursuing internships in consulting or technology-focused roles, with the 
+long-term aim of building a career that bridges business strategy and digital innovation. I 
+value faith, health, relationships, and growth, and I bring that mindset into both my 
+professional and personal pursuits.</p>
+
+            </section></div>
+    </section>
+
+
+   <section class="skills-section" id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+        <div class="skill-card">
+            <h3>Web Development</h3>
+            <p>HTML, CSS, learning JavaScript</p>
+        </div>
+        <div class="skill-card">
+            <h3>Data Architecture</h3>
+            <p>SQL and database management</p>
+        </div>
+        <div class="skill-card">
+            <h3>Data Visualization</h3>
+            <p>Tableau, Power BI</p>
+        </div>
+        <div class="skill-card">
+            <h3>Communication</h3>
+            <p>Writing, presentation, teamwork</p>
+        </div>
+    </div>
+</section>
+<section class="projects-section" id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+        <article class="project-card">
+            <div class="project-content">
+                <h3>High School Senior Project: Personal Website and Business Website</h3>
+                <p>Designed and built a personal website as part of my senior project, learning 
+                    the fundamentals of HTML and CSS. Focused on creating a clean layout and 
+                    organizing content for easy navigation.Created a second website to showcase a fictional 
+                    business idea, applying what I learned from my first build to make the site more professional
+                     and user-friendly. Experimented with styling, color palettes, and formatting.</p>
+                <p><strong>Skills used:</strong> HTML, CSS, other Web Development Basics, and Design Creativity 
+</p>
+            </div>
+        </article>
+        
+        <article class="project-card">
+            <div class="project-content">
+                <h3>Affirmative Action Policy Research</h3>
+                <p>Analyzed online discourse using data scraping and qualitative coding to evaluate perspectives 
+                    on affirmative action.</p>
+                <p><strong>Skills used:</strong> Python, Data Analysis, Research Design, Critical Thinking</p>
+            </div>
+        </article>
+        
+        <article class="project-card">
+            <div class="project-content">
+                <h3>Future Project</h3>
+                <p>A placeholder for a project I plan to build this semester.</p>
+                <p><strong>Skills to learn:</strong> JavaScript, responsive design</p>
+            </div>
+        </article>
+    </div>
+</section>
+</main>
 
 </body>
-</html> 
+</html>
