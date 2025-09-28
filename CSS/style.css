@@ -1,6 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-/*the  next lines override the browser's margin
-and padding defaults*/ 
+:root {
+ --primary-color: hsl(226, 71%, 40%);
+ --heading-color: #0a0c35;
+ --text-color: #000000;
+ --light-text: #818a9d;
+ --background: #d1e0ef;
+ --light-background: #f9fafb;
+ --card-background: #f8f9fa;
+ --card-border: #e9ecef;
+ --card-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ --card-shadow-hover: 0 4px 8px rgba(0, 0, 0, 0.15);
+ --accent-color: #28a745;
+ --link-hover: #007bff;
+}
 
 * {
  box-sizing: border-box;
@@ -10,9 +23,10 @@ and padding defaults*/
 
 body{
 
-    font-family: system-ui, -apple-system, sans-serif;
+    font-family: "Bitter", serif;
     line-height:1.6;
-    color: #333;
+    color: var(--text-color);
+    background: var(--background);
 }
 
 nav {
@@ -22,14 +36,14 @@ nav {
 }
 
 nav a {
-  color: #495057;
+  color: #023e79;
   text-decoration: none;
   margin-right: 2rem;
   font-weight: 500;
 }
 
 nav a:hover {
-  color: #007bff;
+  color: var(--accent-color);
 }
 
 /* Basic focus state for accessibility */
@@ -48,15 +62,16 @@ header {
 
     display: flex;
     align-items: center;
-    padding: 2rem;
+    padding: 4 rem;
     gap: 2rem;
     height: 60vh;
     background-color: #f8f9fa;
+    padding-bottom: 10rem;
 }
 
 .header_text {
 
-    background-color:rgb(171, 218, 220);
+    background-color:rgb(224, 237, 246);
     flex: 1;
     padding: 2rem;
 
@@ -64,7 +79,7 @@ header {
 
 
 .header_pic{
-    background-color:#c3d3e2;
+    background-color:rgb(224, 237, 246);
     flex: 1;
     min-height: 300px;
     border-radius: 10px;
@@ -99,9 +114,9 @@ main {
 }
 
 /* Consistent section spacing */
-section {
-  /* Individual section styling stays the same */
+section { margin-bottom: 2rem; }
 
+/* About section layout */
 .about-section {
   display: grid;
   grid-template-columns: 1fr;
@@ -109,7 +124,7 @@ section {
   padding: 3rem 0;
   align-items: center;
 }
-}
+
 /* On larger screens, create a 2-column layout */
 @media (min-width: 768px) {
   .about-section {
@@ -129,9 +144,6 @@ section {
   border-radius: 8px;
 }
 
-.about-text {
-  /* Text styling stays the same */
-}
 
 /* Consistent spacing between paragraphs */
 p + p {
@@ -146,11 +158,15 @@ p + p {
     margin-top:1rem;
 }
 
+h1,h2,h3 {
+    font-family: "IBM Plex Serif", serif;
+    line-height: 1.2;
+}
 
 h1 {
   font-size: 2.5rem; /* Large, clear headline */
   font-weight: 700;  /* Bold for impact */
-  color: #2d3748;    /* Darker gray for headings */
+  color: var(--heading-color);
   margin-bottom: 1rem;
   line-height: 1.2;  /* Tighter spacing for headings */
 }
@@ -158,7 +174,7 @@ h1 {
 h2 {
   font-size: 2rem;
   font-weight: 600;
-  color: #4a5568;
+  color: var(--heading-color);
   margin-bottom: 0.8rem;
   line-height: 1.3;
 }
@@ -166,7 +182,7 @@ h2 {
 h3 {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #4a5568;
+  color:var(--heading-color);
   margin-bottom: 0.6rem;
   line-height: 1.4;
 }
@@ -261,4 +277,110 @@ p {
   .skills-container {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+
+#contact {
+  padding: 4rem 1rem;
+  background: var(--light-background);
+}
+
+#contact .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Title */
+#contact h2 {
+  margin-bottom: 0.5rem;
+}
+
+#contact p.lead {
+  color: var(--light-text);
+  margin-bottom: 1.5rem;
+}
+
+/* Card grid */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+}
+
+/* Individual card */
+.contact-card {
+  display: block;
+  padding: 1rem;
+  background: var(--card-background);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+  text-decoration: none;
+  color: var(--text-color);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.contact-card:hover,
+.contact-card:focus {
+  transform: translateY(-2px);
+  box-shadow: var(--card-shadow-hover);
+  outline: none;
+}
+.contact-card h3 {
+  margin-bottom: .25rem;
+}
+
+/* Simple form */
+.contact-form {
+  display: grid;
+  gap: .75rem;
+  margin-top: 1rem;
+}
+
+.contact-form label {
+  display: grid;
+  gap: .35rem;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: .75rem;
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  background: #fff;
+  font: inherit;
+}
+
+.contact-form button {
+  justify-self: start;
+  padding: .8rem 1.1rem;
+  border: none;
+  border-radius: 10px;
+  background: var(--primary-color);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity .15s ease;
+}
+.contact-form button:hover { opacity: .95; }
+
+/* Links inside contact cards */
+.contact-card:hover p,
+.contact-card:hover h3 {
+  color: var(--heading-color);
+}
+
+.contact-card {
+  border-radius: 16px; /* bigger, rounder corners */
+}
+
+/* --- Fix About section layout (stack everything) --- */
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr !important; /* override the 2-column media rule */
+  row-gap: 1.25rem;
+}
+
+.about-section > * {
+  grid-column: 1 / -1; /* make H2 and all content span full width */
 }
