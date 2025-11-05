@@ -1,8 +1,8 @@
 {
-  "location": "Fort Worth",
+  "location": "Columbus, GA",
   "temperature": 72,
   "condition": "Partly Cloudy",
-  "icon": 
+  "icon": "⛅",
   "humidity": 65,
-    "wind_speed": 8
+  "windSpeed": 8
 }
