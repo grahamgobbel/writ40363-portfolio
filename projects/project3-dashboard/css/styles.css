@@ -4,7 +4,7 @@
 
 :root {
   /* Color Palette */
-  --color-primary: #667eea;
+  --color-primary: #7b8ee4;
   --color-secondary: #764ba2;
   --color-accent: #4299e1;
 
@@ -79,7 +79,7 @@ body.theme-dark {
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: Georgia, serif;
   background: var(--color-bg-light);
   color: var(--color-text-dark);
 }
@@ -335,7 +335,7 @@ header h1 {
 }
 
 .task-item:hover {
-  background: #f7fafc;
+  background: hsl(203, 100%, 97%);
 }
 
 .task-item input[type="checkbox"] {
@@ -352,7 +352,7 @@ header h1 {
 
 .task-item.completed .task-text {
   text-decoration: line-through;
-  color: #a0aec0;
+  color: #0969e7;
 }
 
 .btn-delete {

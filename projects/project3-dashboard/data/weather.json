@@ -4,5 +4,28 @@
   "condition": "Partly Cloudy",
   "icon": "⛅",
   "humidity": 65,
-  "windSpeed": 8
+  "windSpeed": 8,
+  "forecast": [
+    {
+      "day": "Tomorrow",
+      "high": 75,
+      "low": 58,
+      "condition": "Mostly Sunny",
+      "icon": "🌤️"
+    },
+    {
+      "day": "Wednesday",
+      "high": 73,
+      "low": 55,
+      "condition": "Partly Cloudy",
+      "icon": "⛅"
+    },
+    {
+      "day": "Thursday",
+      "high": 70,
+      "low": 52,
+      "condition": "Light Rain",
+      "icon": "🌧️"
+    }
+  ]
 }
