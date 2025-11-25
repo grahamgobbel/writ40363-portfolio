@@ -23,7 +23,7 @@ A responsive personal dashboard featuring weather, daily quotes, and task manage
 
 ## Live Demo
 
-🔗 [View Live Dashboard](https://your-username.github.io/your-repo-name/)
+🔗 [View Live Dashboard](https://grahamgobbel.github.io/writ40363-portfolio/projects/project3-dashboard/)
 
 ## Setup
 
